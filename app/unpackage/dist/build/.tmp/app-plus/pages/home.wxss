@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 自定义全局函数 */
+/* 自定义全局函数 */
+page {
+  height: 100%;
+  font-size: 28rpx;
+}
+.paddingStatusBar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: var(--status-bar-height);
+}
+.paddingSafeArea {
+  padding-bottom: 0;
+  padding-bottom: calc(constant(safe-area-inset-bottom)/2);
+  padding-bottom: calc(env(safe-area-inset-bottom)/2);
+}
+.bg-gradual-red {
+  background-image: -o-linear-gradient(45deg, #f43f3b, #ec008c);
+  background-image: linear-gradient(45deg, #f43f3b, #ec008c);
+  color: #ffffff;
+}
+.bg-gradual-orange {
+  background-image: -o-linear-gradient(45deg, #ff9700, #ed1c24);
+  background-image: linear-gradient(45deg, #ff9700, #ed1c24);
+  color: #ffffff;
+}
+.bg-gradual-green {
+  background-image: -o-linear-gradient(45deg, #39b54a, #8dc63f);
+  background-image: linear-gradient(45deg, #39b54a, #8dc63f);
+  color: #ffffff;
+}
+.bg-gradual-purple {
+  background-image: -o-linear-gradient(45deg, #9000ff, #5e00ff);
+  background-image: linear-gradient(45deg, #9000ff, #5e00ff);
+  color: #ffffff;
+}
+.bg-gradual-pink {
+  background-image: -o-linear-gradient(45deg, #ec008c, #6739b6);
+  background-image: linear-gradient(45deg, #ec008c, #6739b6);
+  color: #ffffff;
+}
+.bg-gradual-blue {
+  background-image: -o-linear-gradient(45deg, #0081ff, #1cbbb4);
+  background-image: linear-gradient(45deg, #0081ff, #1cbbb4);
+  color: #ffffff;
+}
+.homeView {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.homeView .headerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100rpx;
+    background-image: -o-linear-gradient(45deg, #f43f3b, #ec008c);
+    background-image: linear-gradient(45deg, #f43f3b, #ec008c);
+    background-color: #f35;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 2%;
+    padding-top: var(--status-bar-height);
+    color: #fff;
+    font-size: 30rpx;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+.homeView .headerContainer .logo {
+      width: 70rpx;
+      height: 70rpx;
+}
+.homeView .headerContainer .rightBtn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 34rpx;
+}
+.homeView .headerContainer .rightBtn .iconfont {
+        font-size: 40rpx;
+        margin-right: 8rpx;
+}
+.homeView .br {
+    height: 20rpx;
+    background-color: #e6e6e6;
+}
+.homeView .scrollContainer {
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: scroll;
+}
+.homeView .swiperContainer {
+    width: 100%;
+    margin-top: 20rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.homeView .swiperContainer .swiper-box {
+      width: 96%;
+      height: 230rpx;
+      overflow: hidden;
+      border-radius: 15rpx;
+      -webkit-box-shadow: 0 8rpx 25rpx rgba(0, 0, 0, 0.2);
+              box-shadow: 0 8rpx 25rpx rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+}
+.homeView .swiperContainer .swiper-box swiper {
+        width: 100%;
+        height: 230rpx;
+}
+.homeView .swiperContainer .swiper-box swiper swiper-item image {
+          width: 100%;
+          height: 230rpx;
+}
+.homeView .swiperContainer .swiper-box .indicator {
+        position: absolute;
+        bottom: 20rpx;
+        left: 20rpx;
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 150rpx;
+        height: 5rpx;
+        border-radius: 3rpx;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+}
+.homeView .swiperContainer .swiper-box .indicator .dots {
+          width: 0;
+          background-color: white;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+}
+.homeView .swiperContainer .swiper-box .indicator .dots.on {
+            width: 33.33333%;
+}
+.homeView .categoryContainer {
+    width: 92%;
+    margin: 0 4%;
+    padding: 0 0 30rpx 0;
+    border-bottom: solid 2rpx #f6f6f6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.homeView .categoryContainer .category {
+      width: 25%;
+      margin-top: 30rpx;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+}
+.homeView .categoryContainer .category .img {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+}
+.homeView .categoryContainer .category .img image {
+          width: 9vw;
+          height: 9vw;
+}
+.homeView .categoryContainer .category .text {
+        margin-top: 16rpx;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: 24rpx;
+        color: #3c3c3c;
+}
+.homeView .fastMenuContainer {
+    width: 100%;
+    padding: 10rpx 50rpx;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 35rpx;
+}
+.homeView .fastMenuContainer .box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 26rpx;
+      color: #666;
+}
+.homeView .fastMenuContainer .box .iconbox {
+        width: 90rpx;
+        height: 90rpx;
+        border-radius: 90rpx;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+}
+.homeView .fastMenuContainer .box .iconbox text {
+          color: #fff;
+          font-size: 50rpx;
+}
+.homeView .fastMenuContainer .box .iconbox.bgc1 {
+          background-color: #ff5969;
+}
+.homeView .fastMenuContainer .box .iconbox.bgc2 {
+          background-color: #ff7a1d;
+}
+.homeView .fastMenuContainer .box .iconbox.bgc3 {
+          background-color: #00b49b;
+}
+.homeView .fastMenuContainer .box .iconbox.bgc4 {
+          background-color: #ffc800;
+}
+.homeView .fastMenuContainer .box .namebox {
+        margin-top: 8rpx;
+}
+.homeView .titleCont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 80rpx;
+    color: #666;
+    padding: 0 15rpx;
+}
+.homeView .titleCont .iconfont {
+      color: #f23355;
+      font-size: 40rpx;
+      margin-right: 10rpx;
+}
+.homeView .hotMenuContainer {
+    padding: 0 15rpx 15rpx 15rpx;
+}
+.homeView .hotMenuContainer .rowBox {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden;
+}
+.homeView .hotMenuContainer .rowBox .colBox {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+}
+.homeView .hotMenuContainer .rowBox .img1 {
+        width: 100%;
+        height: 240rpx;
+        border-radius: 10rpx;
+}
+.homeView .hotMenuContainer .rowBox .img2 {
+        width: 100%;
+        height: 112.5rpx;
+        border-radius: 10rpx;
+}
+.homeView .hotMenuContainer .rowBox .img3 {
+        width: 100%;
+        height: 112.5rpx;
+        border-radius: 10rpx;
+}
+.homeView .hotMenuContainer .rowBox .img4 {
+        width: 100%;
+        height: 112.5rpx;
+        border-radius: 10rpx;
+}
+.homeView .hotMenuContainer .mr15 {
+      margin-right: 15rpx;
+}
+.homeView .hotMenuContainer .mb15 {
+      margin-bottom: 15rpx;
+}
+.homeView .hotMenuContainer .mt15 {
+      margin-top: 15rpx;
+}
+.homeView .bannerContainer {
+    width: 92%;
+    margin: 40rpx 4%;
+}
+.homeView .bannerContainer image {
+      width: 100%;
+      height: 150rpx;
+      border-radius: 10rpx;
+}
+.homeView .goodsContainer .title {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80rpx;
+    color: #f47825;
+    font-size: 30rpx;
+    margin-top: 10rpx;
+}
+.homeView .goodsContainer .title image {
+      width: 30rpx;
+      height: 30rpx;
+}
+.homeView .goodsContainer .loading-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60rpx;
+    color: #979797;
+    font-size: 24rpx;
+}
+.homeView .goodsContainer .product-list {
+    width: 92%;
+    padding: 0 4% 3rpx 4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.homeView .goodsContainer .product-list .product {
+      width: 48%;
+      border-radius: 20rpx;
+      background-color: #fff;
+      margin: 0 0 15rpx 0;
+      -webkit-box-shadow: 0rpx 5rpx 25rpx rgba(0, 0, 0, 0.1);
+              box-shadow: 0rpx 5rpx 25rpx rgba(0, 0, 0, 0.1);
+}
+.homeView .goodsContainer .product-list .product image {
+        width: 100%;
+        border-radius: 25rpx 20rpx 0 0;
+}
+.homeView .goodsContainer .product-list .product .name {
+        width: 92%;
+        padding: 10rpx 4%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-align: justify;
+        overflow: hidden;
+        font-size: 28rpx;
+}
+.homeView .goodsContainer .product-list .product .info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        width: 92%;
+        padding: 10rpx 4% 10rpx 4%;
+}
+.homeView .goodsContainer .product-list .product .info .price {
+          color: #e65339;
+          font-size: 30rpx;
+          font-weight: 600;
+}
+.homeView .goodsContainer .product-list .product .info .slogan {
+          color: #807c87;
+          font-size: 24rpx;
+}
+.homeView .footerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100rpx;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-top: 1px solid #d6d6d6;
+    background-image: -o-linear-gradient(45deg, #f43f3b, #ec008c);
+    background-image: linear-gradient(45deg, #f43f3b, #ec008c);
+}
+.homeView .footerContainer .box {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: #fff;
+}
+.homeView .footerContainer .box image {
+        width: 40rpx;
+        height: 40rpx;
+        display: block;
+        margin-bottom: 8rpx;
+}
+.homeView .footerContainer .box .itemIcon {
+        font-size: 40rpx;
+        margin-bottom: 5rpx;
+}
+.homeView .footerContainer .box .itemText {
+        font-size: 24rpx;
+}
+.homeView .homeDrawerContainer {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.homeView .homeDrawerContainer .itemBox {
+      padding: 10rpx;
+      margin: 10rpx 0;
+      font-size: 30rpx;
+}
+

@@ -1,0 +1,58 @@
+{
+  "_from": "uni-simple-router",
+  "_id": "uni-simple-router@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-PFggLbQkZe8/IMKA8z+W95Xdb2T7LYy5moSwjh94inTPh+7SP3ln/TQMbxN4ChDLJOp+4qT0wzkOZWgTf15bsQ==",
+  "_location": "/uni-simple-router",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "uni-simple-router",
+    "name": "uni-simple-router",
+    "escapedName": "uni-simple-router",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uni-simple-router/-/uni-simple-router-1.0.4.tgz",
+  "_shasum": "b3dc46c88d95632fc72e78669caa7441c1807282",
+  "_spec": "uni-simple-router",
+  "_where": "/Users/mymac/Projects/yixin",
+  "author": {
+    "name": "hhyang",
+    "email": "1606726660@qq.com"
+  },
+  "bugs": {
+    "url": "https://github.com/SilurianYang/uni-simple-router/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "a simple, lightweight routing plugin that supports interception and lifecycle triggering",
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/SilurianYang/uni-simple-router#readme",
+  "keywords": [
+    "router",
+    "uni-app-router",
+    "interceptor",
+    "uni-app",
+    "uniapp"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "uni-simple-router",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilurianYang/uni-simple-router.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.4"
+}

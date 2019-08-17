@@ -1,0 +1,1 @@
+<view><view class="mui-content _div"><view class="logo _div"><image src="../static/img/logo.jpg" mode></image></view><view id="bottom_progressbar" class="_div"><view class="progressbar_text _p">{{text}}</view><view class="progress-box"><progress class="progress" percent="{{upgrade}}" activeColor="red" active stroke-width="8"></progress></view></view></view></view>
